@@ -1,0 +1,107 @@
+@import "g-style";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.client {
+  padding: 40px 0;
+  .g-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "mobile-img client-content"
+      "our-client our-client";
+    .mobile-img {
+      grid-area: mobile-img;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .client-content {
+      grid-area: client-content;
+      padding: 60px 0;
+      ul {
+        li {
+          margin-bottom: 20px;
+          h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+          }
+          p {
+            color: #fff;
+            background-color: #5180d2;
+            padding: 26px 30px;
+            border-radius: 10px;
+            position: relative;
+            &:before {
+              content: "";
+              display: block;
+              width: 0;
+              height: 0;
+              border-top: 18px solid transparent;
+              border-bottom: 18px solid transparent;
+              border-right: 30px solid #5180d2;
+              position: absolute;
+              left: -30px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+          .g-green {
+            background-color: #32c992;
+            &:before {
+              border-right: 30px solid #32c992;
+            }
+          }
+        }
+      }
+    }
+    .our-client {
+      grid-area: our-client;
+      padding: 2px 20px;
+      border-radius: 8px;
+      position: relative;
+      border: 8px solid #000;
+      max-width: 825px;
+      margin: 0 auto;
+      h4 {
+        background-color: #fff;
+        padding: 1px 18px;
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.1rem;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        align-items: center;
+        li {
+          margin: 0 5px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    @media (max-width: 992px) {
+      grid-template-areas:
+        "mobile-img mobile-img"
+        "client-content client-content"
+        "our-client our-client";
+      .mobile-img {
+        grid-area: mobile-img;
+      }
+      .client-content {
+        grid-area: client-content;
+      }
+      .our-client {
+        grid-area: our-client;
+      }
+    }
+  }
+}
