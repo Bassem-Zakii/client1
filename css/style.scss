@@ -2,91 +2,40 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 100vh;
 }
 
-footer {
-  padding: 60px 0;
+.steps {
+  padding-top: 50px;
   .g-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-    gap: 18px;
-    & > * {
-      padding: 5px;
-      h3 {
-        font-size: 1rem;
-        margin-bottom: 15px;
-      }
-      ul {
-        li {
-          a {
-            display: block;
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      li {
+        text-align: center;
+        border: 1px solid #e5e5e5;
+        color: #454545;
+        .step-title {
+          border-bottom: 1px solid #e5e5e5;
+          padding: 22px 10px;
+          h3 {
+            font-weight: 400;
+          }
+        }
+        .step-info {
+          padding: 50px 20px;
+          h2 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+          }
+          p {
             font-size: 0.9rem;
-            color: #333;
-            text-decoration: none;
-          }
-        }
-      }
-    }
-    .logo-copyright {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      .footer-logo {
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      .copyright {
-        ul {
-          display: flex;
-          align-items: center;
-          li {
-            font-weight: 700;
-            margin: 0 8px;
-            color: #01b5da;
-            font-size: 1.2rem;
-            &:first-child {
-              margin-left: 0;
+            span {
+              display: block;
+              font-size: 1rem;
+              font-weight: 700;
             }
-          }
-        }
-        p {
-          font-size: 0.8rem;
-        }
-      }
-    }
-    .footer-btns {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      button {
-        color: #fff;
-        height: 40px;
-        font-size: 0.9rem;
-        margin: 10px 0;
-        border: 1px solid #fff;
-        position: relative;
-        background-color: transparent;
-        cursor: pointer;
-        &:before {
-          content: "";
-          position: absolute;
-          top: -6px;
-          left: -6px;
-          right: -6px;
-          bottom: -6px;
-          display: block;
-          z-index: -1;
-        }
-        &:first-child {
-          &:before {
-            background-color: #01b5da;
-          }
-        }
-        &:last-child {
-          &:before {
-            background-color: #00dcb9;
           }
         }
       }

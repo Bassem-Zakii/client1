@@ -52,120 +52,64 @@ ul {
   list-style: none;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-footer {
-  padding: 60px 0;
-}
-
-footer .g-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(170px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap: 18px;
-}
-
-footer .g-container > * {
-  padding: 5px;
-}
-
-footer .g-container > * h3 {
-  font-size: 1rem;
-  margin-bottom: 15px;
-}
-
-footer .g-container > * ul li a {
-  display: block;
-  font-size: 0.9rem;
-  color: #333;
-  text-decoration: none;
-}
-
-footer .g-container .logo-copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .g-container .logo-copyright .footer-logo img {
+img {
   width: 100%;
   height: auto;
 }
 
-footer .g-container .logo-copyright .copyright ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .g-container .logo-copyright .copyright ul li {
-  font-weight: 700;
-  margin: 0 8px;
-  color: #01b5da;
-  font-size: 1.2rem;
-}
-
-footer .g-container .logo-copyright .copyright ul li:first-child {
-  margin-left: 0;
-}
-
-footer .g-container .logo-copyright .copyright p {
-  font-size: 0.8rem;
-}
-
-footer .g-container .footer-btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer .g-container .footer-btns button {
-  color: #fff;
-  height: 40px;
-  font-size: 0.9rem;
-  margin: 10px 0;
-  border: 1px solid #fff;
-  position: relative;
-  background-color: transparent;
+button {
   cursor: pointer;
+  border: 0;
 }
 
-footer .g-container .footer-btns button:before {
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.steps {
+  padding-top: 50px;
+}
+
+.steps .g-container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.steps .g-container ul li {
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  color: #454545;
+}
+
+.steps .g-container ul li .step-title {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 22px 10px;
+}
+
+.steps .g-container ul li .step-title h3 {
+  font-weight: 400;
+}
+
+.steps .g-container ul li .step-info {
+  padding: 50px 20px;
+}
+
+.steps .g-container ul li .step-info h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.steps .g-container ul li .step-info p {
+  font-size: 0.9rem;
+}
+
+.steps .g-container ul li .step-info p span {
   display: block;
-  z-index: -1;
-}
-
-footer .g-container .footer-btns button:first-child:before {
-  background-color: #01b5da;
-}
-
-footer .g-container .footer-btns button:last-child:before {
-  background-color: #00dcb9;
+  font-size: 1rem;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
